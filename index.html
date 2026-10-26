@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="bn" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>MORE TECH – সব অনলাইন সেবা এক জায়গায়</title>
+<meta name="description" content="পাসপোর্ট, পুলিশ ক্লিয়ারেন্স, বিএমইটি, ই-রিটার্নসহ সব সরকারি ও অনলাইন সেবা এক জায়গায়।"><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ctext y=%27.9em%27 font-size=%2790%27%3E%F0%9F%8C%90%3C/text%3E%3C/svg%3E"><link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600;700&text=%E0%A7%A6%E0%A7%A7%E0%A7%A8%E0%A7%A9%E0%A7%AA%E0%A7%AB%E0%A7%AC%E0%A7%AD%E0%A7%AE%E0%A7%AF&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:light;--bg:#fff;--card:#fff;--ink:#1C1416;--mute:#6E5F62;--line:#F0DCDF;--g:#C8102E;--g2:#E11D3F;--red:#C8102E;--gold:#FFD9A0;--tint:#FDECEF}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{background:var(--bg);color:var(--ink);font:16px/1.65 'Noto Sans Bengali','Hind Siliguri',sans-serif}
+h1,h2,h3,.logo{font-family:'Sora','Noto Sans Bengali','Hind Siliguri',sans-serif;line-height:1.25}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.wrap{max-width:1120px;margin:auto;padding:0 20px}
+header{position:sticky;top:0;z-index:20;background:var(--g);color:#fff}
+.nav{display:flex;align-items:center;justify-content:space-between;height:60px}
+.logo{font-weight:700;font-size:19px;display:flex;align-items:center;gap:10px}
+.logo span{letter-spacing:.16em;font-weight:700}.logo span b{color:var(--gold);margin-left:5px}
+nav a{margin-left:22px;font-size:15px;opacity:.88}nav a:hover{opacity:1}
+.btn{display:inline-block;border:0;cursor:pointer;font:600 15px 'Noto Sans Bengali','Hind Siliguri';padding:11px 22px;border-radius:10px;background:var(--red);color:#fff}
+.btn.gold{background:var(--gold);color:#1b1608}
+.hero{background:linear-gradient(135deg,#06352A 0%,var(--g) 55%,var(--g2) 100%);color:#fff;padding:64px 0 90px;position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;right:-120px;top:-120px;width:420px;height:420px;border-radius:50%;background:var(--red);opacity:.9}
+.hero .wrap{position:relative;z-index:1}
+.hero h1{font-size:clamp(30px,5.2vw,52px);max-width:640px;font-weight:700}
+.hero p{max-width:520px;margin:16px 0 28px;color:#CFE3DC;font-size:18px}
+.search{display:flex;max-width:560px;background:#fff;border-radius:14px;padding:6px;box-shadow:0 18px 40px rgba(0,0,0,.28)}
+.search input{flex:1;border:0;padding:12px 16px;font:16px 'Noto Sans Bengali','Hind Siliguri';background:none;color:#12231E;min-width:0}
+.search input:focus{outline:none}
+.stats{display:flex;gap:34px;margin-top:34px;flex-wrap:wrap}
+.stats b{font:700 26px 'Sora','Noto Sans Bengali','Hind Siliguri',sans-serif;display:block;color:var(--gold)}.stats span{font-size:14px;color:#BBD5CC}
+section{padding:56px 0}
+.sh{margin-bottom:26px}.sh h2{font-size:clamp(24px,3.4vw,32px)}.sh p{color:var(--mute)}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px}
+.tab{border:1px solid var(--line);background:var(--card);color:var(--ink);padding:8px 18px;border-radius:99px;cursor:pointer;font:500 15px 'Noto Sans Bengali','Hind Siliguri'}
+.tab[aria-pressed=true]{background:var(--g);color:#fff;border-color:var(--g)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(165px,1fr));gap:12px}
+.svc{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;cursor:pointer;text-align:left;color:var(--ink);font:inherit;display:flex;flex-direction:column;gap:6px;transition:border-color .2s,transform .2s}
+.svc:hover{border-color:var(--g2);transform:translateY(-3px)}
+.ic{width:36px;height:36px;border-radius:10px;background:var(--tint);display:grid;place-items:center;font-size:18px;margin-bottom:2px}
+.svc h3{font-size:15px;line-height:1.35}.svc p{font-size:12.5px;line-height:1.45;color:var(--mute)}
+.svc em{font-style:normal;font-size:12px;color:var(--g2);font-weight:600;margin-top:auto;padding-top:4px}
+.empty{padding:30px;text-align:center;color:var(--mute);border:1px dashed var(--line);border-radius:14px;grid-column:1/-1}
+.band{background:var(--g);color:#fff}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:20px;counter-reset:s}
+.step{border-top:3px solid var(--gold);padding-top:14px}
+.step:before{counter-increment:s;content:counter(s);font:700 30px 'Sora','Noto Sans Bengali','Hind Siliguri',sans-serif;color:var(--gold)}
+.step h3{font-size:18px;margin:4px 0}.step p{color:#BBD5CC;font-size:15px}
+.track{display:flex;gap:10px;flex-wrap:wrap;max-width:560px}
+.track input{flex:1;min-width:200px;padding:13px 16px;border-radius:10px;border:1px solid var(--line);background:var(--card);color:var(--ink);font:16px 'Noto Sans Bengali','Hind Siliguri'}
+footer{background:#06241C;color:#9FBBB1;padding:36px 0;font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+dialog{border:0;border-radius:18px;padding:28px;max-width:440px;width:calc(100% - 32px);background:var(--card);color:var(--ink)}
+dialog::backdrop{background:rgba(0,0,0,.55)}
+dialog h3{font-size:22px;margin-bottom:6px}dialog ul{margin:14px 0 20px 20px;color:var(--mute);font-size:15px}
+dialog .row{display:flex;gap:10px;justify-content:flex-end}
+.btn.ghost{background:var(--tint);color:var(--ink)}
+.toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom,0px));transform:translate(-50%,30px);background:var(--ink);color:var(--bg);padding:12px 22px;border-radius:12px;opacity:0;pointer-events:none;transition:.25s;z-index:50;max-width:90%}
+.toast.on{opacity:1;transform:translate(-50%,0)}
+@media(max-width:720px){nav a:not(.btn){display:none}.hero{padding:44px 0 70px}.hero:after{width:260px;height:260px;right:-100px;top:-90px}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+body{background:radial-gradient(900px 420px at 100% 0,rgba(201,162,75,.12),transparent),radial-gradient(700px 420px at 0 45%,rgba(15,107,83,.12),transparent),var(--bg)}
+.hero{background:radial-gradient(circle at 15% 120%,rgba(201,162,75,.28),transparent 45%),repeating-linear-gradient(135deg,rgba(255,255,255,.035) 0 2px,transparent 2px 22px),linear-gradient(135deg,#06352A 0%,var(--g) 55%,var(--g2) 100%)}
+.svc.pop{border-color:var(--gold)}
+.fb b,.fc b{color:#fff;font:700 18px 'Sora','Noto Sans Bengali','Hind Siliguri',sans-serif;letter-spacing:.12em}.fb b span{color:var(--gold);margin-left:5px}.fc{display:flex;flex-direction:column;gap:6px}.fc a{color:#fff}.fc a:hover{color:var(--gold)}
+dialog.pg{max-width:620px;max-height:94vh;overflow:auto}
+.ah{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:8px}.ah h3{margin:0}
+#af label{display:block;font-weight:600;font-size:14px;margin:12px 0 4px}
+#af input{width:100%;padding:12px 14px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--ink);font:16px 'Noto Sans Bengali','Hind Siliguri'}
+.er{color:var(--red);font-size:14px;min-height:20px;margin-top:8px}.hint{font-size:13px;color:var(--mute);margin-top:8px}
+.ok{text-align:center}.ok b{font:700 26px 'Sora','Noto Sans Bengali','Hind Siliguri',sans-serif;color:var(--g2);display:block;margin:8px 0}
+.cp{flex-basis:100%;border-top:1px solid #1d4a3d;padding-top:14px}
+.fab{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));width:52px;height:52px;border-radius:50%;background:var(--red);display:grid;place-items:center;font-size:24px;box-shadow:0 8px 20px rgba(0,0,0,.3);z-index:30}
+dialog{margin:auto}
+.cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}.btn.wa{background:#25D366;color:#06241C}
+.svc{position:relative;overflow:hidden;box-shadow:0 1px 2px rgba(10,77,60,.06),0 8px 18px -10px rgba(10,77,60,.22)}
+.svc:before{content:"";position:absolute;left:0;top:0;width:100%;height:3px;background:linear-gradient(90deg,var(--gold),var(--g2));transform:scaleX(0);transform-origin:left;transition:transform .3s}
+.svc:hover:before{transform:scaleX(1)}.svc:hover{box-shadow:0 16px 28px -12px rgba(10,77,60,.4)}
+.ic{background:linear-gradient(135deg,var(--tint),rgba(201,162,75,.18));border:1px solid var(--line)}
+.svc em i{font-style:normal;display:inline-block;transition:transform .2s}.svc:hover em i{transform:translateX(4px)}
+.svc.pop{background:linear-gradient(160deg,rgba(201,162,75,.16),var(--card) 55%)}
+.er:not(:empty){padding:8px 12px;border-radius:8px;background:rgba(215,38,61,.12);font-weight:600}
+header{background:#fff;color:var(--ink);border-bottom:1px solid var(--line)}
+.logo span{color:var(--ink)}.logo span b{color:var(--g)}nav a{opacity:1;color:var(--ink)}nav a:hover{color:var(--g)}nav a.btn{color:#fff}
+body{background:#fff}
+.hero{background:radial-gradient(circle at 15% 120%,rgba(255,255,255,.2),transparent 45%),repeating-linear-gradient(135deg,rgba(255,255,255,.05) 0 2px,transparent 2px 22px),linear-gradient(135deg,#8E0B20 0%,var(--g) 55%,var(--g2) 100%)}
+.hero:after{background:#fff;opacity:.12}.hero p,.stats span,.step p{color:#FFE0E5}
+.btn.gold{background:var(--ink);color:#fff}
+.svc{box-shadow:0 1px 2px rgba(200,16,46,.06),0 8px 18px -10px rgba(200,16,46,.22)}.svc:hover{box-shadow:0 16px 28px -12px rgba(200,16,46,.4)}
+.ic{background:linear-gradient(135deg,var(--tint),#fff)}.svc.pop{background:linear-gradient(160deg,rgba(200,16,46,.07),var(--card) 55%);border-color:var(--g2)}
+footer{background:#1C1416;color:#CDB9BD}.cp{border-color:#3a2a2e}.cp a{color:#fff;text-decoration:underline}
+dialog.adm{max-width:980px}.atool{display:flex;gap:10px;flex-wrap:wrap;margin:12px 0}.atool input,#alg input{padding:11px 14px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--ink);font:16px 'Noto Sans Bengali','Hind Siliguri'}.atool input{flex:1;min-width:180px}#alg input{width:100%;margin:8px 0}
+.ast{font-weight:600}.tw{overflow-x:auto}table{width:100%;border-collapse:collapse;font-size:14px}th,td{padding:9px 10px;border-bottom:1px solid var(--line);text-align:left;white-space:nowrap}th{background:var(--tint)}td select{padding:5px;border-radius:8px;border:1px solid var(--line);font:inherit;background:var(--bg);color:var(--ink)}
+dialog.adm{max-width:440px}
+dialog.adm.full{max-width:none;width:100%;height:100%;max-height:none;border-radius:0;padding:0;background:#F8F4F5}
+.dw{padding:20px}.full .dw{max-width:1200px;margin:auto;padding:max(20px,env(safe-area-inset-top,0px)) 20px 40px}
+.kp{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin:12px 0}
+.kc{background:#fff;border:1px solid var(--line);border-top:4px solid;border-radius:12px;padding:12px 14px}.kc span{font-size:13px;color:var(--mute);display:block}.kc b{font:700 28px 'Sora','Noto Sans Bengali','Hind Siliguri',sans-serif}
+.cg{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px;margin-bottom:14px}
+.cd{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 16px}.cd h4{font-size:15px;margin-bottom:10px}
+#ch{width:100%;height:auto}#ch text,#dn text{font-family:'Noto Sans Bengali','Hind Siliguri',sans-serif}.kc b,.stats b{line-height:1.2}.stats b{font-size:30px}.kc b{font-size:32px}
+#dn{display:flex;align-items:center;gap:14px;flex-wrap:wrap}.lg{font-size:14px;display:grid;gap:4px}.lg i{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:8px}
+.tr{margin-bottom:9px;font-size:14px}.tr div:first-child{display:flex;justify-content:space-between;gap:8px}.bar{height:6px;background:var(--tint);border-radius:9px;margin-top:3px}.bar i{display:block;height:100%;background:var(--g);border-radius:9px}
+.chips{display:flex;gap:6px;flex-wrap:wrap;flex-basis:100%}
+.full .tw{background:#fff;border:1px solid var(--line);border-radius:12px}
+.dh{display:flex;gap:8px;flex-wrap:wrap;margin:4px 0 8px}
+.drw{position:fixed;inset:0;background:rgba(0,0,0,.45);display:flex;justify-content:flex-end;z-index:5}.drw[hidden]{display:none}
+.dp{background:#fff;width:min(420px,100%);padding:22px;overflow:auto}.dp dl{display:grid;grid-template-columns:70px 1fr;gap:6px 10px;margin:12px 0;font-size:15px}.dp dt{color:var(--mute)}.dp dd{margin:0;font-weight:600;word-break:break-word}
+.dp label{display:block;font-weight:600;font-size:14px;margin:12px 0 4px}.dp select,.dp textarea{width:100%;padding:10px 12px;border-radius:10px;border:1px solid var(--line);font:16px 'Noto Sans Bengali','Hind Siliguri';background:var(--bg);color:var(--ink)}.dp .row{margin-top:14px}
+
+.svc{border-radius:16px;padding:16px;gap:7px;background:linear-gradient(180deg,#fff,#FFF6F7);transition:transform .35s cubic-bezier(.2,.7,.2,1),box-shadow .35s,border-color .35s}
+.svc .ic{width:46px;height:46px;border-radius:14px;font-size:23px;background:linear-gradient(135deg,#FFF3F5,#FFDDE3);border:1px solid #F7C4CC;box-shadow:0 8px 16px -8px rgba(200,16,46,.65),inset 0 1px 0 #fff;transition:transform .4s cubic-bezier(.34,1.56,.64,1)}
+.svc h3{font-weight:700;letter-spacing:.005em}
+.svc:after{content:"";position:absolute;top:0;left:-70%;width:45%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.75),transparent);transform:skewX(-20deg);transition:left .75s ease;pointer-events:none}
+.svc:hover{transform:translateY(-6px);border-color:#F2A0AD;box-shadow:0 24px 38px -20px rgba(200,16,46,.6),0 0 0 4px rgba(200,16,46,.07)}
+.svc:hover:after{left:130%}.svc:hover .ic{transform:scale(1.12) rotate(-6deg)}
+.svc:active{transform:translateY(-2px) scale(.98)}
+.svc em{display:inline-flex;align-items:center;gap:4px;align-self:flex-start;margin-top:auto;padding:4px 11px;border-radius:99px;background:var(--tint);color:var(--g);font-weight:700;transition:background .25s,color .25s}
+.svc:hover em{background:var(--g);color:#fff}
+.svc.pop{border-color:#E8A0AB;background:linear-gradient(160deg,#FFF0F2,#fff 60%);box-shadow:0 10px 22px -14px rgba(200,16,46,.5)}
+.svc.pop .ic{background:linear-gradient(135deg,#C8102E,#E11D3F);border-color:transparent;box-shadow:0 10px 18px -8px rgba(200,16,46,.8),inset 0 1px 0 rgba(255,255,255,.35)}
+@media(prefers-reduced-motion:reduce){.svc:after{display:none}.svc:hover,.svc:hover .ic{transform:none}}
+.svc:before{content:none}
+.fab{width:auto;height:52px;border-radius:99px;padding:0 20px 0 16px;display:flex;align-items:center;gap:8px;color:#fff}.fab span{font:700 15px 'Noto Sans Bengali','Hind Siliguri',sans-serif}
+body.ao>header,body.ao>main,body.ao>footer,body.ao>.fab,body.ao>.toast{display:none}body.ao{background:#F8F4F5}
+
+/* বাংলা সংখ্যা স্পষ্ট করার জন্য */
+.stats b{font-family:'Noto Sans Bengali','Hind Siliguri','Noto Sans Bengali','Kalpurush','Nirmala UI','Vrinda',sans-serif;font-size:36px;font-weight:700;line-height:1.2;color:#fff;text-shadow:0 2px 8px rgba(0,0,0,.25)}
+.stats span{font-size:15px;font-weight:500;color:#fff}
+.step:before{font-family:'Noto Sans Bengali','Hind Siliguri','Noto Sans Bengali','Kalpurush','Nirmala UI','Vrinda',sans-serif;font-size:38px;font-weight:700}
+.kc b{font-family:'Noto Sans Bengali','Hind Siliguri','Noto Sans Bengali','Kalpurush','Nirmala UI','Vrinda',sans-serif;font-size:36px;font-weight:700;line-height:1.25;color:var(--ink);display:block}
+.kc span{font-size:14px;font-weight:600}
+.ok b{font-family:'Noto Sans Bengali','Hind Siliguri','Noto Sans Bengali','Kalpurush','Nirmala UI','Vrinda',sans-serif}
+.tr b,.lg,.tab,td,th{font-family:'Noto Sans Bengali','Hind Siliguri','Noto Sans Bengali','Kalpurush','Nirmala UI','Vrinda',sans-serif}
+.tr{font-size:15px}.tr b{font-size:17px;font-weight:700}
+.lg{font-size:15px;font-weight:600}
+#ch{min-height:170px}
+#ch text,#dn text{font-family:'Noto Sans Bengali','Hind Siliguri','Noto Sans Bengali','Kalpurush','Nirmala UI','Vrinda',sans-serif;font-weight:700}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+  <a class="logo" href="#top" aria-label="MORE TECH"><svg width="40" height="40" viewBox="0 0 40 40" aria-hidden="true"><defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#EBC96E"/><stop offset="1" stop-color="#B5862B"/></linearGradient></defs><path d="M20 2l15 8.5v19L20 38 5 29.5v-19z" fill="#C8102E" stroke="url(#lg)" stroke-width="2.2"/><path d="M12 27V15l8 8 8-8v12" fill="none" stroke="#fff" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><circle cx="20" cy="10" r="2.6" fill="#fff"/></svg><span>MORE<b>TECH</b></span></a>
+  <nav><a href="#popular">জনপ্রিয় সেবা</a><a href="#services">সব সেবা</a><a href="#track">ট্র্যাক করুন</a><a class="btn" href="#contact" style="margin-left:22px">যোগাযোগ</a></nav>
+</div></header>
+
+<main id="top">
+<div class="hero"><div class="wrap">
+  <h1>সব সরকারি ও অনলাইন সেবা, এক জায়গায়</h1>
+  <p>পাসপোর্ট, বিমানের টিকিট, পুলিশ ক্লিয়ারেন্স, বিএমইটি, ই-রিটার্ন — ঘরে বসেই আবেদন করুন, অবস্থা দেখুন।</p>
+  <div class="search" role="search">
+    <input id="q" type="search" placeholder="কোন সেবা খুঁজছেন? যেমন: পাসপোর্ট" aria-label="সেবা খুঁজুন">
+    <button class="btn" id="go">খুঁজুন</button>
+  </div>
+  <div class="stats"><div><b>১০০+</b><span>অনলাইন সেবা</span></div><div><b>২৪/৭</b><span>যেকোনো সময় আবেদন</span></div><div><b>১০০%</b><span>ডিজিটাল প্রক্রিয়া</span></div></div>
+</div></div>
+
+<section id="popular" style="padding-bottom:0"><div class="wrap"><div class="sh"><h2>সবচেয়ে বেশি ব্যবহৃত সেবা</h2><p>যে সেবাগুলো মানুষ সবচেয়ে বেশি নেন, সরাসরি এখান থেকে শুরু করুন।</p></div><div class="grid" id="pop"></div></div></section>
+<section id="services"><div class="wrap">
+  <div class="sh"><h2>আমাদের সেবাসমূহ</h2><p>একটি সেবা বেছে নিন, বাকি ধাপ আমরা দেখিয়ে দেব।</p><div class="cta"><a class="btn" href="tel:+8801729766270">📞 কল করুন: 01729-766270</a><a class="btn wa" href="https://wa.me/8801729766270" target="_blank" rel="noopener">💬 হোয়াটসঅ্যাপ</a></div></div>
+  <div class="tabs" id="tabs"></div>
+  <div class="grid" id="grid"></div>
+</div></section>
+
+<section class="band"><div class="wrap">
+  <div class="sh"><h2>আবেদন করবেন যেভাবে</h2></div>
+  <div class="steps">
+    <div class="step"><h3>সেবা বাছাই করুন</h3><p>তালিকা থেকে প্রয়োজনীয় সেবাটি নির্বাচন করুন।</p></div>
+    <div class="step"><h3>নাম ও ফোন নম্বর দিন</h3><p>আবেদন ফর্মে শুধু আপনার নাম ও মোবাইল নম্বর লিখে জমা দিন।</p></div>
+    <div class="step"><h3>আমরা যোগাযোগ করব</h3><p>আবেদন জমার পর আমাদের টিম দ্রুত আপনার সাথে যোগাযোগ করবে।</p></div>
+  </div>
+</div></section>
+
+
+<section id="track" style="padding-top:0"><div class="wrap">
+  <div class="sh"><h2>আবেদনের অবস্থা দেখুন</h2><p>আপনার আবেদন আইডি বা পাসপোর্ট নম্বর লিখুন।</p></div>
+  <div class="track"><input id="tid" placeholder="যেমন: APP-2026-10458" aria-label="আবেদন আইডি"><button class="btn gold" id="tbtn">ট্র্যাক করুন</button></div>
+</div></section>
+</main>
+
+<footer id="contact"><div class="wrap"><div class="fb"><b>MORE<span>TECH</span></b><p>ডিজিটাল বাংলাদেশের জন্য এক ঠিকানায় সব সেবা।</p></div><div class="fc"><b>যোগাযোগ</b><a href="mailto:moretech.ms@gmail.com">✉ moretech.ms@gmail.com</a><a href="tel:+8801729766270">☎ হেল্পলাইন: +88 01729-766270</a><a href="tel:+8801302515132">☎ হেল্পলাইন: +88 01302-515132</a></div><div class="cp">© 2026 MORE TECH · সর্বস্বত্ব সংরক্ষিত · <a href="#admin" id="aopen" target="_blank" rel="noopener">অ্যাডমিন</a></div></div></footer><a class="fab" href="tel:+8801729766270" aria-label="কল করুন: 01729-766270">📞<span>01729-766270</span></a>
+
+<dialog id="dlg"><h3 id="dt"></h3><p id="dd" style="color:var(--mute)"></p><ul id="dl"></ul><div class="row"><button class="btn ghost" id="dc">বন্ধ করুন</button><button class="btn" id="da">আবেদন শুরু করুন</button></div></dialog>
+<dialog id="apd" class="pg"><div class="ah"><h3 id="at"></h3><button type="button" class="btn ghost" id="ax" aria-label="বন্ধ করুন">✕</button></div>
+<form id="af" novalidate><label>পূর্ণ নাম *<input id="fn" autocomplete="name" placeholder="আপনার নাম"></label><label>মোবাইল নম্বর *<input id="fp" type="tel" inputmode="tel" autocomplete="tel" placeholder="01XXXXXXXXX"></label><label>সেবার নাম<input id="fs" readonly></label><p class="hint">শুধু নাম ও ফোন নম্বর দিলেই হবে। এটি ডেমো সংস্করণ, তাই তথ্য এখনো সার্ভারে সংরক্ষিত হয় না।</p><p class="er" id="er" role="alert"></p><div class="row"><button type="button" class="btn ghost" id="ac">বাতিল</button><button type="submit" class="btn">আবেদন জমা দিন</button></div></form>
+<div id="ok" class="ok" hidden><h3>আবেদন সম্পন্ন হয়েছে ✅</h3><p>আপনার আবেদন নম্বর</p><b id="oid"></b><p style="font-weight:600;margin-top:10px">আমাদের টিমের কেউ একজন দ্রুত আপনার সাথে যোগাযোগ করবে।</p><p class="hint">নম্বরটি সংরক্ষণ করে রাখুন।</p><div class="row" style="justify-content:center;margin-top:16px"><a class="btn gold" id="oml" href="#">ইমেইলে জানান</a><a class="btn" href="tel:+8801729766270">📞 01729-766270</a></div></div></dialog>
+<dialog id="adm" class="pg adm"><div class="dw"><div class="ah"><h3>📊 অ্যাডমিন ড্যাশবোর্ড</h3><button type="button" class="btn ghost" id="adx" aria-label="বন্ধ করুন">✕</button></div>
+<div id="alg"><p class="hint">অ্যাডমিন পাসওয়ার্ড দিন।</p><input id="apw" type="password" autocomplete="current-password" placeholder="পাসওয়ার্ড"><p class="er" id="aer" role="alert"></p><button type="button" class="btn" id="alb">লগইন</button></div>
+<div id="apn" hidden>
+<div class="dh"><button type="button" class="btn ghost" id="aref">রিফ্রেশ</button><button type="button" class="btn gold" id="acsv">CSV ডাউনলোড</button><button type="button" class="btn ghost" id="aout">লগআউট</button></div>
+<div class="kp" id="kp"></div>
+<div class="cg"><div class="cd"><h4>গত ৭ দিনের আবেদন</h4><svg id="ch" viewBox="0 0 300 124" role="img" aria-label="গত ৭ দিনের আবেদনের চার্ট"></svg></div><div class="cd"><h4>অবস্থা অনুযায়ী</h4><div id="dn"></div></div><div class="cd"><h4>শীর্ষ সেবা</h4><div id="tp"></div></div></div>
+<div class="atool"><input id="aq" placeholder="নাম / ফোন / আইডি / সেবা খুঁজুন"><div class="chips" id="fl"></div></div>
+<div class="tw"><table><thead><tr><th>আইডি</th><th>নাম</th><th>ফোন</th><th>সেবা</th><th>সময়</th><th>অবস্থা</th><th></th></tr></thead><tbody id="atb"></tbody></table></div>
+</div></div><div class="drw" id="dr" hidden></div></dialog>
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+var S=[
+{c:"ভ্রমণ",i:"🛂",n:"পাসপোর্ট আবেদন",d:"নতুন, নবায়ন ও হারানো পাসপোর্টের আবেদন।",t:"৭–২১ কর্মদিবস",r:["জাতীয় পরিচয়পত্র / জন্মনিবন্ধন","ছবি ও স্বাক্ষর","ফি পরিশোধের রসিদ"]},
+{c:"ভ্রমণ",i:"✈️",n:"বিমানের টিকিট",d:"দেশি-বিদেশি ফ্লাইট খুঁজুন ও বুক করুন।",t:"তাৎক্ষণিক",r:["যাত্রীর নাম (পাসপোর্ট অনুযায়ী)","ভ্রমণের তারিখ","পেমেন্ট মাধ্যম"]},
+{c:"সরকারি",i:"👮",n:"পুলিশ ক্লিয়ারেন্স",d:"চাকরি ও বিদেশযাত্রার জন্য সনদের আবেদন।",t:"৫–১০ কর্মদিবস",r:["জাতীয় পরিচয়পত্র","পাসপোর্টের কপি","সাম্প্রতিক ছবি"]},
+{c:"প্রবাস",i:"🧰",n:"ম্যানপাওয়ার (BMET)",d:"কর্মীর নিবন্ধন, স্মার্ট কার্ড ও ছাড়পত্র।",t:"৩–৭ কর্মদিবস",r:["পাসপোর্ট","ভিসা / কাজের চুক্তি","মেডিকেল সনদ"]},
+{c:"সরকারি",i:"🧾",n:"ই-রিটার্ন (আয়কর)",d:"টিআইএন নিয়ে অনলাইনে আয়কর রিটার্ন জমা।",t:"১০ মিনিট",r:["ই-টিআইএন","আয়ের বিবরণ","ব্যাংক স্টেটমেন্ট"]},
+{c:"চাকরি",i:"🏛️",n:"সরকারি চাকরির আবেদন",d:"বিজ্ঞপ্তি দেখুন, ফর্ম পূরণ ও ফি জমা দিন।",t:"১৫ মিনিট",r:["শিক্ষাগত সনদ","ছবি ও স্বাক্ষর","এনআইডি"]},
+{c:"সরকারি",i:"🪪",n:"জন্ম ও মৃত্যু নিবন্ধন",d:"নিবন্ধন, সংশোধন ও অনলাইন কপি।",t:"৩–৫ কর্মদিবস",r:["পিতা-মাতার এনআইডি","হাসপাতালের সনদ"]},
+{c:"ইউটিলিটি",i:"💡",n:"বিল পেমেন্ট",d:"বিদ্যুৎ, গ্যাস, পানি ও ইন্টারনেট বিল।",t:"তাৎক্ষণিক",r:["গ্রাহক / মিটার নম্বর","পেমেন্ট মাধ্যম"]},
+{c:"ইউটিলিটি",i:"🏠",n:"ভূমি কর ও খতিয়ান",d:"অনলাইনে ভূমি উন্নয়ন কর ও খতিয়ান।",t:"১–৩ কর্মদিবস",r:["জমির দাগ / খতিয়ান নম্বর","মালিকের এনআইডি"]}
+];
+var X={"ভ্রমণ":"🛂|ই-পাসপোর্ট নবায়ন;🚆|ট্রেন টিকিট;🚌|বাস টিকিট;🚢|লঞ্চ টিকিট;🛃|ভিসা আবেদন;🏨|হোটেল বুকিং;🕋|হজ্জ ও ওমরা নিবন্ধন;🧳|ট্যুর প্যাকেজ;🚕|রাইড শেয়ার ও ক্যাব;🛡️|ট্রাভেল ইনসুরেন্স","সরকারি":"🪪|এনআইডি সংশোধন;🪪|নতুন এনআইডি;🔢|ই-টিআইএন নিবন্ধন;💍|বিবাহ নিবন্ধন;📜|নাগরিক সনদ;📜|ওয়ারিশ সনদ;🚗|ড্রাইভিং লাইসেন্স;🚙|গাড়ি রেজিস্ট্রেশন (BRTA);🏢|ট্রেড লাইসেন্স;📑|ই-মিউটেশন;📝|জিডি / এফআইআর অনলাইন;📮|ই-ডাক ও পোস্টাল সেবা;🗳️|ভোটার তথ্য যাচাই;🏛️|তথ্য অধিকার আবেদন","প্রবাস":"💳|BMET স্মার্ট কার্ড;🌍|বিদেশ গমন ছাড়পত্র;🩺|মেডিকেল সনদ (GAMCA);📄|ওয়েজ আর্নার্স কার্ড;🏦|রেমিট্যান্স সেবা;🎓|প্রবাসী কর্মী প্রশিক্ষণ;🤝|রিক্রুটিং এজেন্সি যাচাই;🆘|প্রবাসী অভিযোগ","চাকরি":"🧑‍🏫|শিক্ষক নিবন্ধন (NTRCA);🏦|ব্যাংক চাকরি;🪖|সশস্ত্র বাহিনী নিয়োগ;👮|পুলিশ নিয়োগ;🏥|স্বাস্থ্য বিভাগ চাকরি;📝|বিসিএস আবেদন;📚|পিএসসি ফলাফল;💼|প্রাইভেট জব পোর্টাল;📬|প্রবেশপত্র ডাউনলোড;📄|সিভি বানান","শিক্ষা":"🎓|কলেজ ভর্তি;🎓|বিশ্ববিদ্যালয় ভর্তি;🏫|স্কুল ভর্তি;📝|এসএসসি / এইচএসসি ফরম পূরণ;📊|পরীক্ষার ফলাফল;📜|সার্টিফিকেট যাচাই;💰|উপবৃত্তি আবেদন;🌏|বিদেশে পড়াশোনা;🗣️|আইইএলটিএস নিবন্ধন;💻|অনলাইন কোর্স;📖|লাইব্রেরি কার্ড","ইউটিলিটি":"💡|বিদ্যুৎ বিল;🔥|গ্যাস বিল;💧|পানি বিল;🌐|ইন্টারনেট বিল;📱|মোবাইল রিচার্জ;📺|ক্যাবল ও ডিশ বিল;🏘️|হোল্ডিং ট্যাক্স;🔌|নতুন সংযোগ আবেদন;🔧|মিটার সমস্যা অভিযোগ;☎️|টেলিফোন বিল","ব্যাংক":"🏦|ব্যাংক হিসাব খোলা;💳|ক্রেডিট কার্ড আবেদন;🏠|হোম লোন;📈|সঞ্চয়পত্র;🛡️|জীবন বিমা;🚑|স্বাস্থ্য বিমা;📲|বিকাশ / নগদ একাউন্ট;💸|টাকা পাঠান;🧮|ঋণ ক্যালকুলেটর;🪙|ডিপিএস আবেদন","স্বাস্থ্য":"🏥|ডাক্তার অ্যাপয়েন্টমেন্ট;💉|টিকা নিবন্ধন;🧬|ল্যাব টেস্ট বুকিং;🩸|রক্তদাতা খুঁজুন;💊|অনলাইন ফার্মেসি;🚑|অ্যাম্বুলেন্স;📋|স্বাস্থ্য সনদ;🧠|টেলিমেডিসিন","আইন-ব্যবসা":"⚖️|ই-কোর্ট মামলার তথ্য;🏢|কোম্পানি নিবন্ধন (RJSC);🏷️|ট্রেডমার্ক নিবন্ধন;📦|আমদানি-রপ্তানি লাইসেন্স;🧾|ভ্যাট নিবন্ধন;🚛|কাস্টমস ক্লিয়ারেন্স;📃|স্ট্যাম্প ক্রয়;🔍|এনওসি আবেদন","সমাজকল্যাণ":"🌾|কৃষক কার্ড;🐄|প্রাণিসম্পদ সেবা;🧓|বয়স্ক ভাতা;🤱|মাতৃত্বকালীন ভাতা;♿|প্রতিবন্ধী সনদ;🎖️|মুক্তিযোদ্ধা সনদ;📞|জাতীয় হেল্পলাইন ৯৯৯"};
+Object.keys(X).forEach(function(c){X[c].split(";").forEach(function(p){var a=p.split("|");S.push({c:c,i:a[0],n:a[1],d:a[1]+" — অনলাইনে আবেদন ও তথ্য",t:"অনলাইনে আবেদন",r:["এনআইডি / পাসপোর্টের কপি","সাম্প্রতিক ছবি ও প্রয়োজনীয় কাগজ","ফি পরিশোধ"]})})});
+var cats=["সব"].concat(S.map(function(x){return x.c}).filter(function(v,i,a){return a.indexOf(v)==i}));
+var cur="সব",all=0,cs=null,$=function(id){return document.getElementById(id)};
+function tabs(){$("tabs").innerHTML="";cats.forEach(function(c){var b=document.createElement("button");b.className="tab";b.textContent=c;b.setAttribute("aria-pressed",c==cur);b.onclick=function(){cur=c;tabs();draw()};$("tabs").appendChild(b)})}
+function draw(){var q=$("q").value.trim().toLowerCase(),g=$("grid");g.innerHTML="";
+var L=S.filter(function(s){return(cur=="সব"||s.c==cur)&&(!q||(s.n+s.d).toLowerCase().indexOf(q)>-1)});
+if(!L.length){g.innerHTML='<div class="empty">কোনো সেবা পাওয়া যায়নি। অন্য শব্দ দিয়ে খুঁজুন।</div>';return}
+var tot=L.length;if(cur=="সব"&&!q&&!all)L=L.slice(0,12);L.forEach(function(s){var b=document.createElement("button");b.className="svc";b.innerHTML='<div class="ic">'+s.i+'</div><h3>'+s.n+'</h3><p>'+s.d+'</p><em>আবেদন করুন <i>→</i></em>';b.onclick=function(){open_(s)};g.appendChild(b)});if(tot>L.length){var m=document.createElement("button");m.className="btn gold";m.style.gridColumn="1/-1";m.textContent="আরও "+bn(tot-L.length)+"টি সেবা দেখুন";m.onclick=function(){all=1;draw()};g.appendChild(m)}}
+function open_(s){cs=s;$("dt").textContent=s.n;$("dd").textContent=s.d;$("dl").innerHTML="<li>সময়: "+s.t+"</li><li>প্রয়োজনীয় কাগজ: "+s.r.join(", ")+"</li><li>আবেদন শুরু করতে শুধু নাম ও ফোন নম্বর লাগবে</li>";$("dlg").showModal()}
+function toast(m){var t=$("toast");t.textContent=m;t.classList.add("on");setTimeout(function(){t.classList.remove("on")},2800)}
+$("dc").onclick=function(){$("dlg").close()};
+$("q").oninput=draw;$("go").onclick=function(){draw();$("services").scrollIntoView()};
+cats.push("ডিজিটাল সেবা");
+"📶|ডেটা ও ইন্টারনেট প্যাকেজ;🔐|সিম নিবন্ধন ও রি-ভেরিফিকেশন;🌐|ডকুমেন্ট অনুবাদ;✅|সার্টিফিকেট অ্যাটেস্টেশন;📸|পাসপোর্ট সাইজ ছবি ও প্রিন্ট;🖨️|ফটোকপি ও কম্পোজ;💻|ফ্রিল্যান্সার পেমেন্ট;🛒|অনলাইন শপিং ও ডেলিভারি;🌍|ডোমেইন ও ওয়েবসাইট;📝|যেকোনো অনলাইন ফর্ম পূরণ".split(";").forEach(function(p){var a=p.split("|");S.push({c:"ডিজিটাল সেবা",i:a[0],n:a[1],d:a[1]+" — অনলাইনে আবেদন ও তথ্য",t:"অনলাইনে আবেদন",r:["এনআইডি / পাসপোর্টের কপি","সাম্প্রতিক ছবি ও প্রয়োজনীয় কাগজ","ফি পরিশোধ"]})});
+var POP=["পাসপোর্ট আবেদন","এনআইডি সংশোধন","পুলিশ ক্লিয়ারেন্স","বিমানের টিকিট","ট্রেন টিকিট","বিদ্যুৎ বিল","মোবাইল রিচার্জ","ই-রিটার্ন (আয়কর)","ড্রাইভিং লাইসেন্স","ম্যানপাওয়ার (BMET)","সিম নিবন্ধন ও রি-ভেরিফিকেশন","যেকোনো অনলাইন ফর্ম পূরণ"];
+POP.forEach(function(n){var s=S.filter(function(x){return x.n==n})[0];if(!s)return;var b=document.createElement("button");b.className="svc pop";b.innerHTML='<div class="ic">'+s.i+'</div><h3>'+s.n+'</h3><p>'+s.d+'</p><em>আবেদন করুন <i>→</i></em>';b.onclick=function(){open_(s)};$("pop").appendChild(b)});
+function app(){$("af").reset();$("ok").hidden=true;$("af").hidden=false;$("er").textContent="";$("at").textContent=cs.n+" – আবেদন";$("fs").value=cs.n;$("apd").showModal()}
+$("da").onclick=function(){$("dlg").close();app()};
+$("ax").onclick=$("ac").onclick=function(){$("apd").close()};
+$("af").onsubmit=function(e){e.preventDefault();var n=$("fn").value.trim(),p=$("fp").value.replace(/[০-৯]/g,function(d){return "০১২৩৪৫৬৭৮৯".indexOf(d)}).replace(/[\s-]/g,""),er=$("er");
+if(n.length<3){er.textContent="⚠ পূর্ণ নাম লিখুন।";er.scrollIntoView({block:"nearest"});$("fn").focus();return}
+if(!/^(\+?88)?01[3-9]\d{8}$/.test(p)){er.textContent="⚠ সঠিক মোবাইল নম্বর দিন (যেমন 01712345678)।";er.scrollIntoView({block:"nearest"});$("fp").focus();return}
+var id="MT-"+Date.now().toString(36).toUpperCase().slice(-6);
+try{var d=JSON.parse(localStorage.getItem("mt")||"{}");d[id]={s:cs.n,n:n,p:p,t:Date.now(),st:"নতুন"};localStorage.setItem("mt",JSON.stringify(d))}catch(x){}
+$("oid").textContent=id;$("oml").href="mailto:moretech.ms@gmail.com?subject="+encodeURIComponent(id+" – "+cs.n)+"&body="+encodeURIComponent("নাম: "+n+"\nফোন: "+p+"\nসেবা: "+cs.n+"\nআইডি: "+id);
+$("af").hidden=true;$("ok").hidden=false};
+$("tbtn").onclick=function(){var v=$("tid").value.trim().toUpperCase(),r=null;try{r=JSON.parse(localStorage.getItem("mt")||"{}")[v]}catch(x){}toast(!v?"আগে আবেদন আইডি লিখুন":r?v+": "+r.s+" – অবস্থা: "+(r.st||"নতুন"):"এই আইডি পাওয়া যায়নি। সহায়তা: 01729-766270")};
+var AH="a504fe5e3a376a9208189a090c4787a2166d1ab65b51b7079ce191ca07c8ae5d",E=function(s){return String(s==null?"":s).replace(/[&<>"']/g,function(c){return "&#"+c.charCodeAt(0)+";"})},ST=["নতুন","যোগাযোগ হয়েছে","সম্পন্ন"],SC={"নতুন":"#C8102E","যোগাযোগ হয়েছে":"#E0A100","সম্পন্ন":"#1E9E5A"},fl="সব",dk=null,bn=function(n){return String(n).replace(/\d/g,function(d){return "০১২৩৪৫৬৭৮৯".charAt(d)})};
+function ld(){try{return JSON.parse(localStorage.getItem("mt")||"{}")}catch(x){return{}}}
+function sv(d){try{localStorage.setItem("mt",JSON.stringify(d))}catch(x){}}
+function stt(v){return v.st||"নতুন"}
+function opts(s){return ST.map(function(o){return '<option'+(s==o?" selected":"")+'>'+o+'</option>'}).join("")}
+function fdt(t){return t?new Date(t).toLocaleString("bn-BD",{dateStyle:"medium",timeStyle:"short"}):"-"}
+function adr(){var d=ld(),ks=Object.keys(d),q=$("aq").value.trim().toLowerCase(),t0=new Date().setHours(0,0,0,0),cnt={},td=0,sc={};
+ST.forEach(function(s){cnt[s]=0});
+ks.forEach(function(k){var v=d[k];cnt[stt(v)]=(cnt[stt(v)]||0)+1;if((v.t||0)>=t0)td++;sc[v.s]=(sc[v.s]||0)+1});
+$("kp").innerHTML=[["মোট আবেদন",ks.length,"#1C1416"],["আজকের আবেদন",td,"#C8102E"]].concat(ST.map(function(s){return [s,cnt[s],SC[s]]})).map(function(x){return '<div class="kc" style="border-top-color:'+x[2]+'"><span>'+x[0]+'</span><b>'+bn(x[1])+'</b></div>'}).join("");
+var ds=[],mx=1,i;for(i=6;i>=0;i--){var a=t0-i*864e5,c=ks.filter(function(k){var t=d[k].t||0;return t>=a&&t<a+864e5}).length;ds.push({a:a,c:c});if(c>mx)mx=c}
+$("ch").innerHTML=ds.map(function(x,j){var h=Math.round(x.c/mx*70),X=j*42+8;return '<rect x="'+X+'" y="'+(96-h)+'" width="28" height="'+Math.max(h,3)+'" rx="5" fill="'+(x.c?"#C8102E":"#F0DCDF")+'"/><text x="'+(X+14)+'" y="'+(90-h)+'" text-anchor="middle" font-size="16" font-weight="700" fill="#1C1416">'+(x.c?bn(x.c):"")+'</text><text x="'+(X+14)+'" y="118" text-anchor="middle" font-size="13" font-weight="600" fill="#4a3d40">'+bn(new Date(x.a).getDate())+'</text>'}).join("");
+var C=251.3,o=0,tot=ks.length||1;
+$("dn").innerHTML='<svg viewBox="0 0 100 100" width="130" height="130" role="img" aria-label="অবস্থা অনুযায়ী আবেদন"><circle cx="50" cy="50" r="40" fill="none" stroke="#F0DCDF" stroke-width="14"/>'+ST.map(function(s){var l=cnt[s]/tot*C,e='<circle cx="50" cy="50" r="40" fill="none" stroke="'+SC[s]+'" stroke-width="14" stroke-dasharray="'+l+' '+(C-l)+'" stroke-dashoffset="'+(-o)+'" transform="rotate(-90 50 50)"/>';o+=l;return e}).join("")+'<text x="50" y="57" text-anchor="middle" font-size="26" font-weight="700" fill="#1C1416">'+bn(ks.length)+'</text></svg><div class="lg">'+ST.map(function(s){return '<div><i style="background:'+SC[s]+'"></i>'+s+': '+bn(cnt[s])+'</div>'}).join("")+'</div>';
+var tp=Object.keys(sc).sort(function(a,b){return sc[b]-sc[a]}).slice(0,5);
+$("tp").innerHTML=tp.length?tp.map(function(s){return '<div class="tr"><div><span>'+E(s)+'</span><b>'+bn(sc[s])+'</b></div><div class="bar"><i style="width:'+Math.round(sc[s]/sc[tp[0]]*100)+'%"></i></div></div>'}).join(""):'<p class="hint">এখনো কোনো আবেদন আসেনি।</p>';
+$("fl").innerHTML=["সব"].concat(ST).map(function(s){return '<button type="button" class="tab" data-f="'+s+'" aria-pressed="'+(s==fl)+'">'+s+' ('+bn(s=="সব"?ks.length:cnt[s])+')</button>'}).join("");
+var L=ks.filter(function(k){var v=d[k];return (fl=="সব"||stt(v)==fl)&&(!q||(k+" "+v.n+" "+(v.p||"")+" "+v.s).toLowerCase().indexOf(q)>-1)}).sort(function(a,b){return (d[b].t||0)-(d[a].t||0)});
+$("atb").innerHTML=L.length?L.map(function(k){var v=d[k],s=stt(v);return '<tr><td><b>'+E(k)+'</b></td><td>'+E(v.n)+'</td><td>'+E(v.p||"-")+'</td><td>'+E(v.s)+'</td><td>'+E(fdt(v.t))+'</td><td><select data-k="'+E(k)+'" aria-label="অবস্থা" style="border-color:'+(SC[s]||"#ccc")+'">'+opts(s)+'</select></td><td><button type="button" class="btn ghost" data-o="'+E(k)+'">বিস্তারিত</button> <button type="button" class="btn ghost" data-del="'+E(k)+'">মুছুন</button></td></tr>'}).join(""):'<tr><td colspan="7" style="text-align:center;color:var(--mute)">'+(ks.length?"এই ফিল্টারে কোনো আবেদন নেই":"এখনো কোনো আবেদন আসেনি")+'</td></tr>'}
+function dro(k){var v=ld()[k];if(!v)return;dk=k;var p=(v.p||"").replace(/^\+/,""),w=/^01/.test(p)?"88"+p:p;
+$("dr").innerHTML='<div class="dp"><div class="ah"><h3>আবেদনের বিবরণ</h3><button type="button" class="btn ghost" id="ddx" aria-label="বন্ধ করুন">✕</button></div><dl><dt>আইডি</dt><dd>'+E(k)+'</dd><dt>নাম</dt><dd>'+E(v.n)+'</dd><dt>ফোন</dt><dd>'+E(v.p||"-")+'</dd><dt>সেবা</dt><dd>'+E(v.s)+'</dd><dt>সময়</dt><dd>'+E(fdt(v.t))+'</dd></dl><label>অবস্থা<select id="dst">'+opts(stt(v))+'</select></label><label>অভ্যন্তরীণ নোট<textarea id="dnt" rows="4" maxlength="500" placeholder="যেমন: কল করা হয়েছে, কাগজ চাওয়া হয়েছে"></textarea></label><div class="row" style="justify-content:flex-start;flex-wrap:wrap"><a class="btn" href="tel:'+E(v.p||"")+'">📞 কল করুন</a><a class="btn wa" target="_blank" rel="noopener" href="https://wa.me/'+E(w)+'">💬 হোয়াটসঅ্যাপ</a><button type="button" class="btn gold" id="dsv">সংরক্ষণ করুন</button></div></div>';
+$("dnt").value=v.note||"";$("dr").hidden=false;
+$("ddx").onclick=function(){$("dr").hidden=true};
+$("dsv").onclick=function(){var d=ld();if(d[dk]){d[dk].st=$("dst").value;d[dk].note=$("dnt").value.slice(0,500);sv(d)}$("dr").hidden=true;adr()}}
+$("dr").onclick=function(e){if(e.target==this)this.hidden=true};
+$("fl").onclick=function(e){var f=e.target.dataset.f;if(f){fl=f;adr()}};
+$("atb").onchange=function(e){var k=e.target.dataset.k;if(!k)return;var d=ld();if(d[k]){d[k].st=e.target.value;sv(d);adr()}};
+$("atb").onclick=function(e){var t=e.target;if(t.dataset.o)return dro(t.dataset.o);var k=t.dataset.del;if(!k||!confirm("এই আবেদনটি মুছে ফেলবেন?"))return;var d=ld();delete d[k];sv(d);adr()};
+$("acsv").onclick=function(){var d=ld(),L=[["আইডি","নাম","ফোন","সেবা","সময়","অবস্থা","নোট"]];Object.keys(d).forEach(function(k){var v=d[k];L.push([k,v.n,v.p||"",v.s,v.t?new Date(v.t).toLocaleString("en-GB"):"",stt(v),v.note||""])});
+var c="\ufeff"+L.map(function(r){return r.map(function(x){x=String(x);if(/^[=@+\-]/.test(x))x="'"+x;return '"'+x.replace(/"/g,'""')+'"'}).join(",")}).join("\n"),a=document.createElement("a");a.href=URL.createObjectURL(new Blob([c],{type:"text/csv;charset=utf-8"}));a.download="applications.csv";a.click()};
+function oad(){$("adm").classList.remove("full");$("alg").hidden=false;$("apn").hidden=true;$("dr").hidden=true;$("aer").textContent="";$("adm").showModal()}
+var ADM=location.hash=="#admin";
+if(ADM){document.body.classList.add("ao");document.title="অ্যাডমিন ড্যাশবোর্ড – MORE TECH";oad();$("adm").addEventListener("close",function(){location.href=location.pathname+location.search})}
+$("adx").onclick=function(){$("adm").close()};
+function sha(t){var b=new TextEncoder().encode(t);return crypto.subtle.digest("SHA-256",b).then(function(h){return Array.from(new Uint8Array(h)).map(function(x){return x.toString(16).padStart(2,"0")}).join("")})}
+$("alb").onclick=function(){var pw=$("apw").value;if(!window.crypto||!crypto.subtle){$("aer").textContent="⚠ এই ব্রাউজারে লগইন সম্ভব নয় (HTTPS দরকার)";return}
+sha(pw).then(function(h){if(h===AH){$("apw").value="";$("aer").textContent="";$("alg").hidden=true;$("apn").hidden=false;$("adm").classList.add("full");adr()}else $("aer").textContent="⚠ ভুল পাসওয়ার্ড"})};
+$("apw").onkeydown=function(e){if(e.key=="Enter")$("alb").click()};
+$("aout").onclick=function(){$("apn").hidden=true;$("alg").hidden=false;$("dr").hidden=true;$("adm").classList.remove("full");$("aq").value=""};
+$("aref").onclick=adr;$("aq").oninput=adr;
+window.addEventListener("storage",function(){if(!$("apn").hidden)adr()});
+tabs();draw();
+</script>
+</body>
+</html>
